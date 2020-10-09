@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "707ae95b-5c18-4879-b40a-a3bd6a3f5932",
+		"name": "MERN CRUD",
+		"description": "create a todo app using MERN technologies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add a todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todo_description\" : \"My first todo\",\r\n    \"todo_responsible\" : \"Sebastian\",\r\n    \"todo_priority\" : \"Medium\",\r\n    \"todo_completed\" : false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/todos/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos",
+						"add"
+					]
+				},
+				"description": "first call"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a todo by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/todos/5f8033b3f28c3a1d6455658d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos",
+						"5f8033b3f28c3a1d6455658d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a todo , specific by id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todo_description\" : \"My first todo\",\r\n    \"todo_responsible\" : \"Sebastian\",\r\n    \"todo_priority\" : \"Medium\",\r\n    \"todo_completed\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/todos/update/5f8033b3f28c3a1d6455658d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos",
+						"update",
+						"5f8033b3f28c3a1d6455658d"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
