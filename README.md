@@ -1,3 +1,13 @@
+To test the app
+
+run the following commands at the same time
+
+nodemon server,  in the folder back end
+
+npm start , in the folder mern-todo-app
+
+and start the app at http://localhost:3000/
+
 This project was bootstrapped with Create React App.
 
 Available Scripts
