@@ -1,4 +1,6 @@
-This project was bootstrapped with Create React App.
+I have followed the tutorial https://codingthesmartway.com/the-mern-stack-tutorial-building-a-react-crud-application-from-start-to-finish-part-1/
+
+This project was bootstrapped with https://github.com/facebook/create-react-app
 
 Available Scripts
 In the project directory, you can run:
